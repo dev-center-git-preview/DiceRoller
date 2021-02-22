@@ -17,7 +17,11 @@ class MainActivity : AppCompatActivity() {
         resultTextView = findViewById(R.id.result_textView)
         rollButton = findViewById(R.id.roll_button)
         rollButton.setOnClickListener {
-            resultTextView.text = "${Random().nextInt(6) + 1}"
+            rollDice()
         }
+    }
+
+    private fun rollDice() {
+        resultTextView.text = "${Random().nextInt(6) + 1}"
     }
 }
