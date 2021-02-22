@@ -13,11 +13,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         rollButton = findViewById(R.id.roll_button)
         rollButton.setOnClickListener {
-            Toast.makeText(
-                    this,
-                    "Roll button clicked!",
-                     Toast.LENGTH_SHORT)
-                    .show()
         }
     }
 }
