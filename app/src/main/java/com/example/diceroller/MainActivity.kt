@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
     private lateinit var resultTextView: TextView
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         resultTextView = findViewById(R.id.result_textView)
         rollButton = findViewById(R.id.roll_button)
         rollButton.setOnClickListener {
+            resultTextView.text = "${Random().nextInt(6) + 1}"
         }
     }
 }
