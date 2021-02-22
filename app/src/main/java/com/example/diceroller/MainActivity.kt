@@ -11,6 +11,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         rollButton = findViewById(R.id.roll_button)
-        rollButton.text = "Let's Roll"
     }
 }
